@@ -92,8 +92,6 @@ CMD ["/usr/bin/supervisord"]
 
 # install node and npm 
 USER root
-WORKDIR /home/app
-COPY ./package.json /home/app/package.json
 RUN apt-get update
 RUN apt-get -y install curl gnupg
 RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash -
