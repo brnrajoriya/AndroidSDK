@@ -102,3 +102,4 @@ RUN . "$NVM_DIR/nvm.sh" && nvm alias default v${NODE_VERSION}
 RUN cp /root/.nvm/versions/node/v${NODE_VERSION}/bin/node /usr/bin/
 RUN cp /root/.nvm/versions/node/v${NODE_VERSION}/bin/npm /usr/bin/
 RUN /root/.nvm/versions/node/v${NODE_VERSION}/bin/npm install  leasot@latest -g
+RUN npm install -g cordova
